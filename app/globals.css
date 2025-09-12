@@ -1,0 +1,15 @@
+@import "tailwindcss";
+
+/* soft diagonal gradient */
+body {
+  background-image: radial-gradient(1200px 800px at 10% 0%, rgba(99,102,241,.08), transparent 40%),
+                    radial-gradient(900px 600px at 90% 20%, rgba(236,72,153,.08), transparent 45%),
+                    radial-gradient(700px 500px at 50% 100%, rgba(20,184,166,.08), transparent 50%);
+}
+
+/* optional: reduce motion respect */
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; transition-duration: 0.01ms !important; scroll-behavior: auto !important; }
+}
+
+html { scroll-behavior: smooth; }
